@@ -1,28 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+ 
 <head>
-<style>
-img {
-    position: absolute;
-    right: 200px;
-    top: 200px;
-    }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+ 
+    <title>AngularJS & Firebase Web App</title>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet">
+ 
 </head>
-<body>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "Welcome to Telugu movie reviews";
-</script>
-
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
-
-<img id="image" src="smiley.gif" width="304" height="228" >
-<p>Recent movies Released</p>
-<p><a href="movie1.jsp">MOVIE1</a></p>
-<p><a href="movie2.jsp">MOVIE2</a></p>
-<p><a href="movie3.jsp">MOVIE3</a></p>
+ 
+<body ng-controller="WelcomeCtrl">
+ 
+    <div class="blog-masthead">
+        <div class="container">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="#">Home</a>
+                <a class="blog-nav-item " href="addPost.html">Add Post</a>
+ 
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h1>AngularJS & Firebase App</h1>
+        </div>
+        <p class="lead">Welcome home !!</p>
+ 
+    </div>
+ 
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"></p>
+        </div>
+    </footer>
+ 
 </body>
+ 
 </html>
